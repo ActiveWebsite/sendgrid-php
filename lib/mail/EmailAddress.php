@@ -70,9 +70,7 @@ class EmailAddress implements \JsonSerializable
      */ 
     public function setEmailAddress($emailAddress)
     {
-        if (!(is_string($emailAddress) &&
-            filter_var($emailAddress, FILTER_VALIDATE_EMAIL))
-        ) {
+        if (!(is_string($emailAddress))) {
             throw new TypeException(
                 "{$emailAddress} must be valid and of type string."
             );
