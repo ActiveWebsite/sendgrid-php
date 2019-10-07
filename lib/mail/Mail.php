@@ -1004,9 +1004,7 @@ class Mail implements \JsonSerializable
             $this->from = $email;
         } else {
 
-            if (
-                is_string($email) && filter_var($email, FILTER_VALIDATE_EMAIL)
-            ) {
+            if (is_string($email)) {
                 $this->from = new From($email, $name);
             } else {
                 throw new TypeException(
