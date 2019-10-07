@@ -27,7 +27,7 @@
     "swaggest/json-diff": "^3.4"
   },
   "replace": {
-    "sendgrid/sendgrid-php": "*"
+    "activewebsite/sendgrid-php": "*"
   },
   "type": "library",
   "autoload": {
